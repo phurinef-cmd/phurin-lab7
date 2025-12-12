@@ -1,8 +1,20 @@
 #include<iostream>
 using namespace std;
 
+//ไม่ต้องเติม function main()
+
 char before(char x){
-	//Write your function definition here
+    if (x == 'A'){
+         x = 'Z';
+         return x;
+    }
+    if (x > 'A' and x<'['){
+        return x-1;
+    }
+    else{
+        x ='0';
+        return x;
+    }
 }
 
 int main(){
